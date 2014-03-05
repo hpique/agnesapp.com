@@ -110,9 +110,6 @@ body{
 .iapps{
 	background: url(../images/img-sprit.png) no-repeat 0px -65px;
 }
-.gapps{
-	background: url(../images/img-sprit.png) no-repeat -240px -65px;
-}
 .big-btns {
 	margin-top: 2em;
 }
@@ -1045,9 +1042,6 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 	}
 	.iapps {
 		background: url(../images/img-sprit.png) no-repeat -1px -147px;
-	}
-	.gapps {
-		background: url(../images/img-sprit.png) no-repeat -132px -147px;
 	}
 	.header {
 		padding: 1.22em 0px 0px 0px;

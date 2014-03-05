@@ -37,14 +37,14 @@ body{
 	margin: 0 auto;
 }
 .header-left{
-	float:left;
-	width: 34%;
+	float: left;
+	width: 50%;
 	text-align: center;
 }
 .header-left span{
-	background:url(../images/divice.png) no-repeat 0px 0px;
+	background:url(../images/device.png) no-repeat 0px 0px;
 	display:inline-block;
-	width:330px;
+	width:340px;
 	height:720px;
 }
 .header-right p{
@@ -56,7 +56,7 @@ body{
 }
 .header-right {
 	float: right;
-	width: 58%;
+	width: 50%;
 	padding: 3.5em 0px 0px 0px;
 }
 .fea-list li{

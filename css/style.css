@@ -1123,3 +1123,10 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 		width:100%;
 	}
 }
+
+@media only screen and (max-width:320px) and (min-width:240px) and (-webkit-min-device-pixel-ratio: 2) {
+	.header-left span {
+		background: url(../images/icon152x152@2x.png) no-repeat 0px 0px;
+		background-size: 152px 152px;
+	}
+}

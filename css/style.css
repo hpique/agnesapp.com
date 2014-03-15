@@ -86,10 +86,12 @@ body{
 .big-btns li{
 	display:inline-block;
 }
-.big-btns li a{
-	width: 219px;
-	height: 77px;
+.big-btns li a {
+	width: 135px;
+	height: 40px;
 	display: inline-block;
+	-webkit-transform: translateZ(0); /* HACK: See: http://stackoverflow.com/questions/13347947/css-filter-on-retina-display-fuzzy-images */
+	-webkit-filter: invert(100%); 
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -107,8 +109,8 @@ body{
 	-o-transition: opacity .15s ease-in-out;
 	transition: opacity .15s ease-in-out;
 }
-.iapps{
-	background: url(../images/img-sprit.png) no-repeat 0px -65px;
+.iapps {
+	background: url(../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg) no-repeat 0px 0px;
 }
 .big-btns {
 	margin-top: 2em;
@@ -491,12 +493,7 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 .twitter{
 	background: url(../images/img-sprit.png) no-repeat -2px -194px;
 }
-.face{
-	background: url(../images/img-sprit.png) no-repeat -82px -194px;
-}
-.linked-in{
-	background: url(../images/img-sprit.png) no-repeat -162px -194px;
-}
+
 .social-icons{
 	text-align:center;
 	margin: 2em 0;
@@ -593,8 +590,14 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 #toTop:active, #toTop:focus {
 	outline: none;
 }
-/*---//End-wrap-----*/
-/*---start-responsive design----*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.header-left span{
+		background:url(../images/device@2x.png) no-repeat 0px 0px;
+		background-size: 340px 720px;
+	}
+}
+
 @media only screen and (max-width: 1440px) and (min-width:1366px) {
 	.wrap{
 		width:75%;
@@ -662,6 +665,14 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 		width: 55%;
 	}
 }
+
+@media only screen and (max-width: 1024px) and (min-width:768px) and (-webkit-min-device-pixel-ratio: 2) {
+	.header-left span{
+		background:url(../images/device-1024w@2x.png) no-repeat 0px 0px;
+		background-size: 280px 593px;
+	}
+}
+
 @media only screen and (max-width: 768px) and (min-width:640px) {
 	.wrap{
 		width:90%;
@@ -710,7 +721,7 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 	.header-left span {
 		background: url(../images/device-768w.png) no-repeat 0px 0px;
 		width: 200px;
-		height:424px;
+		height: 436px;
 	}
 	.header-right {
 		float:none;
@@ -751,6 +762,7 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 		margin:0 auto;
 	}
 }
+
 @media only screen and (max-width: 640px) and (min-width:480px) {
 	.wrap{
 		width:90%;
@@ -835,6 +847,14 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 		margin-right:0;
 	} 
 }
+
+@media only screen and (max-width: 768px) and (min-width:480px) and (-webkit-min-device-pixel-ratio: 2) {
+	.header-left span{
+		background:url(../images/device-768w@2x.png) no-repeat 0px 0px;
+		background-size: 200px 436px;
+	}
+}
+
 @media only screen and (max-width:480px) and (min-width:320px) {
 	.wrap{
 		width:90%;
@@ -946,6 +966,14 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 		text-align:center;
 	}
 }
+
+@media only screen and (max-width:480px) and (min-width:320px) and (-webkit-min-device-pixel-ratio: 2) {
+	.header-left span {
+		background: url(../images/icon152x152@2x.png) no-repeat 0px 0px;
+		background-size: 152px 152px;
+	}
+}
+
 @media only screen and (max-width:320px) and (min-width:240px) {
 	.wrap{
 		width:90%;
@@ -1036,13 +1064,7 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 	.faq-grid-left-grid:nth-child(2),.faq-grid-left-grid:nth-child(4),.faq-grid-left-grid:nth-child(6),.faq-grid-left-grid:nth-child(8){
 		margin-right:0;
 	} 
-	.big-btns li a {
-		width: 120px;
-		height:41px;
-	}
-	.iapps {
-		background: url(../images/img-sprit.png) no-repeat -1px -147px;
-	}
+	
 	.header {
 		padding: 1.22em 0px 0px 0px;
 	}
